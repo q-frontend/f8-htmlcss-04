@@ -610,3 +610,68 @@ a {
   background-color: var(--primary-color);
   color: #fff;
 }
+.teams {
+  margin-top: 130px;
+}
+.teams__desc {
+  color: #5e6085;
+  text-align: center;
+  font-family: Sora;
+  font-weight: 600;
+}
+.teams__title {
+  display: block;
+  margin: 15px auto 59px;
+  text-align: center;
+  color: #000958;
+  font-family: Sora;
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2; /* 119.231% */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: url(../img/mouse.jpg);
+}
+.teams-list {
+  display: flex;
+  gap: 37px;
+}
+.teams__img {
+  width: 251px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  outline: 3px solid var(--primary-color);
+  /* animation: opa 2s linear infinite; */
+}
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.teams-item span {
+  display: block;
+  color: #656689;
+  text-align: center;
+}
+.teams-item span:last-child {
+  margin-top: 14px;
+  color: #000958;
+  text-align: center;
+  font-family: Sora;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 100% */
+}
+.teams__btn {
+  margin: 48px auto 0;
+}
