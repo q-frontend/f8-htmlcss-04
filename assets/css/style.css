@@ -3,6 +3,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -49,6 +50,12 @@ a {
 .header {
   background: #f2f2f2;
 }
+.stick-nav {
+  position: sticky;
+  top: -10px;
+  z-index: 1;
+  background: pink;
+}
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -81,6 +88,7 @@ a {
   border-radius: 25px;
   border: 1px solid #000958;
   animation: updown 2s alternate infinite;
+  background: pink;
 }
 .header__cta:hover {
   opacity: 0.7;
@@ -615,6 +623,7 @@ a {
 }
 .teams {
   margin-top: 130px;
+  padding-bottom: 130px;
 }
 .teams__desc {
   color: #5e6085;
@@ -678,9 +687,13 @@ a {
 .teams__btn {
   margin: 48px auto 0;
 }
+.teams__btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
 /* prices */
 .prices {
-  padding-bottom: 86px;
+  padding-top: 86px;
 }
 .prices__title {
   color: #000958;
